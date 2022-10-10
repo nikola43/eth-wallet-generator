@@ -59,5 +59,5 @@ func GenerateWallet() {
 
 	file, _ := json.MarshalIndent(wallet, "", " ")
 	_ = ioutil.WriteFile(dirname+"/wallets/"+address+".json", file, 0755)
-	fmt.Println("Wallet generated: ", wallet.PublicKey)
+	fmt.Println("Wallet generated: ", wallet)
 }
